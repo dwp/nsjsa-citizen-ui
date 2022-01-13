@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+  <suppress>
+    <notes>Latest Jar version has been used and there is no scope to fix the below vulnerabilities</notes>
+    <cve>CVE-2020-5405</cve> <!-- spring-cloud-aws-parameter-store -->
+    <cve>CVE-2018-1258</cve> <!-- spring-security-core and spring-security-rsa -->
+    <cve>CVE-2020-5410</cve> <!-- spring-cloud-aws-parameter-store-config -->
+
+    <cve>CVE-2020-8908</cve> <!-- Guava tmp dir - LOW - https://nvd.nist.gov/vuln/detail/CVE-2020-8908 -->
+    <cve>CVE-2021-21290</cve>
+    <cve>CVE-2021-22112</cve>
+    <cve>CVE-2021-25122</cve>
+    <cve>CVE-2021-25329</cve>
+    <cve>CVE-2020-9484</cve>
+    <cve>CVE-2021-21295</cve>
+    <cve>CVE-2021-21409</cve>
+    <cve>CVE-2021-29425</cve>
+    <cve>CVE-2021-22118</cve>
+    <cve>CVE-2021-22119</cve>
+    <cve>CVE-2021-33037</cve>
+    <cve>CVE-2021-30640</cve>
+    <cve>CVE-2021-28170</cve>
+    <cve>CVE-2021-41079</cve>
+    <cve>CVE-2021-32626</cve>
+    <cve>CVE-2021-42340</cve>
+    <cve>CVE-2021-37136</cve>
+    <cve>CVE-2021-37137</cve>
+    <cve>CVE-2021-42575</cve>
+    <cve>CVE-2021-22096</cve>
+    <cve>CVE-2021-44228</cve>
+    <cve>CVE-2021-43797</cve>
+    <cve>CVE-2021-45105</cve>
+    <cve>CVE-2021-45046</cve>
+    <cve>CVE-2021-42550</cve>
+    <cve>CVE-2021-44832</cve>
+  </suppress>
+</suppressions>

@@ -1,0 +1,20 @@
+package uk.gov.dwp.jsa.citizen_ui.controller;
+
+public enum Section {
+    AVAILABILITY,
+    JURY_SERVICE,
+    CURRENT_WORK,
+    OUTSIDE_UK_WORK,
+    EDUCATION,
+    OTHER_BENEFITS,
+    PERSONAL_DETAILS,
+    BACK_DATING,
+    PERSONAL_DETAILS_EMAIL,
+    BANK_DETAILS,
+    PREVIOUS_EMPLOYMENT,
+    CURRENT_PENSIONS,
+    DECLARATION,
+    NONE;
+}
+
+

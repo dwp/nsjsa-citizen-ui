@@ -1,0 +1,282 @@
+{
+  "claimantId": "123456433",
+  "claimStartDate": "2018-10-22",
+  "dateOfClaim": "2018-10-22",
+  "declarationAgreed": true,
+  "hasNonUKWorkBenefit": true,
+  "hasExtraPrevWork": true,
+  "currentWork": [
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "netPay": 123.45,
+      "paymentFrequency": "MONTHLY",
+      "canChooseIfPaid": false,
+      "hoursPerWeek": 23,
+      "voluntary": false,
+      "paid": true,
+      "voluntaryJobPaid": false,
+      "selfEmployedOrDirector": true
+    },
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "netPay": 123.45,
+      "paymentFrequency": "MONTHLY",
+      "canChooseIfPaid": false,
+      "hoursPerWeek": 23,
+      "voluntary": false,
+      "paid": true,
+      "voluntaryJobPaid": false,
+      "selfEmployedOrDirector": true
+    },
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "netPay": 123.45,
+      "paymentFrequency": "MONTHLY",
+      "canChooseIfPaid": false,
+      "hoursPerWeek": 23,
+      "voluntary": false,
+      "paid": true,
+      "voluntaryJobPaid": false,
+      "selfEmployedOrDirector": true
+    },
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "netPay": 123.45,
+      "paymentFrequency": "MONTHLY",
+      "canChooseIfPaid": false,
+      "hoursPerWeek": 23,
+      "voluntary": false,
+      "paid": true,
+      "voluntaryJobPaid": false,
+      "selfEmployedOrDirector": true
+    }
+  ],
+  "hasExtraCurrentJobs": true,
+  "previousWork": [
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "startDate": "2018-07-01",
+      "endDate": "2018-09-03",
+      "reasonEnded": "OTHER",
+      "otherReasonDetails": "Other reasons",
+      "paymentExpected": true,
+      "selfEmployedOrDirector": true
+    },
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "startDate": "2018-07-01",
+      "endDate": "2018-09-03",
+      "reasonEnded": "OTHER",
+      "otherReasonDetails": "Other reasons",
+      "paymentExpected": true,
+      "selfEmployedOrDirector": true
+    },
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "startDate": "2018-07-01",
+      "endDate": "2018-09-03",
+      "reasonEnded": "OTHER",
+      "otherReasonDetails": "Other reasons",
+      "paymentExpected": true,
+      "selfEmployedOrDirector": true
+    },
+    {
+      "employerName": "Valtech",
+      "employerPhoneNumber": "07580043023",
+      "employerAddress": {
+        "firstLine": "32 Basil Chambers",
+        "secondLine": "Arndale",
+        "postCode": "M28 3UB",
+        "town": "Manchester",
+        "country": null
+      },
+      "startDate": "2018-07-01",
+      "endDate": "2018-09-03",
+      "reasonEnded": "OTHER",
+      "otherReasonDetails": "Other reasons",
+      "paymentExpected": true,
+      "selfEmployedOrDirector": true
+    }
+  ],
+  "education": {
+    "courseName": "ANY_COURSE",
+    "hoursPerWeek": 10,
+    "startDate": "2018-01-01",
+    "endDate": "2018-04-03",
+    "institutionName": "ANY_PLACE"
+  },
+  "juryService": {
+    "startDate": "2018-01-01",
+    "endDate": "2018-04-01"
+  },
+  "availability": {
+    "daysNotAvailable": [
+      {
+        "date": "2018-10-22",
+        "morning": {
+          "selected": true,
+          "reasonType": "DRIVING_LESSON",
+          "detail": ""
+        },
+        "afternoon": {
+          "selected": true,
+          "reasonType": "CARE_AND_RESPONSIBILITY",
+          "detail": ""
+        }
+      }
+    ]
+  },
+  "otherBenefit": {
+    "description": "Other benefits"
+  },
+  "pensions": {
+    "current": [
+      {
+        "providerName": "Aviva",
+        "netPay": 123,
+        "paymentFrequency": "MONTHLY",
+        "hasPeriodicIncrease": true,
+        "pensionIncreaseMonth": "DECEMBER",
+        "providerAddress": {
+          "firstLine": "32",
+          "secondLine": "Basil Chambers",
+          "postCode": "M28 3UB",
+          "town": "Manchester",
+          "country": null
+        }
+      },
+      {
+        "providerName": "Aviva",
+        "netPay": 123,
+        "paymentFrequency": "MONTHLY",
+        "hasPeriodicIncrease": true,
+        "pensionIncreaseMonth": "DECEMBER",
+        "providerAddress": {
+          "firstLine": "32",
+          "secondLine": "Basil Chambers",
+          "postCode": "M28 3UB",
+          "town": "Manchester",
+          "country": null
+        }
+      }
+    ],
+    "deferred": [
+      {
+        "providerName": "Aviva",
+        "netPay": 123,
+        "paymentFrequency": "MONTHLY",
+        "hasPeriodicIncrease": false,
+        "pensionIncreaseMonth": null,
+        "providerAddress": {
+          "firstLine": "32",
+          "secondLine": "Basil Chambers",
+          "postCode": "M28 3UB",
+          "town": "Manchester",
+          "country": null
+        }
+      },
+      {
+        "providerName": "Aviva",
+        "netPay": 123,
+        "paymentFrequency": "MONTHLY",
+        "hasPeriodicIncrease": false,
+        "pensionIncreaseMonth": null,
+        "providerAddress": {
+          "firstLine": "32",
+          "secondLine": "Basil Chambers",
+          "postCode": "M28 3UB",
+          "town": "Manchester",
+          "country": null
+        }
+      }
+    ],
+    "future": [
+      {
+        "providerName": "Aviva",
+        "netPay": 123,
+        "paymentFrequency": "MONTHLY",
+        "hasPeriodicIncrease": false,
+        "pensionIncreaseMonth": null,
+        "providerAddress": {
+          "firstLine": "32",
+          "secondLine": "Basil Chambers",
+          "postCode": "M28 3UB",
+          "town": "Manchester",
+          "country": null
+        }
+      },
+      {
+        "providerName": "Aviva",
+        "netPay": 123,
+        "paymentFrequency": "MONTHLY",
+        "hasPeriodicIncrease": false,
+        "pensionIncreaseMonth": null,
+        "providerAddress": {
+          "firstLine": "32",
+          "secondLine": "Basil Chambers",
+          "postCode": "M28 3UB",
+          "town": "Manchester",
+          "country": null
+        }
+      }
+    ],
+    "hasExtraPensions": true
+  },
+  "locale": "en"
+}
