@@ -104,6 +104,10 @@ public class HasCurrentPensionController extends BaseFormController<GuardForm<Gu
                               final StepInstance stepInstance) {
         if (form.isGuardedCondition()) {
             if (!pensionsService.canAddPension(claim)) {
+                if (form.getCount() == null) {
+                    //added to allow user to navigate through pensions when going back
+                    return "redirect:/form/pensions/current/details/1/provider-name" + getEditParam(form);
+                }
                 return format("redirect:/form/pensions/max-current-pensions?backUrl=%s",
                         "/form/pensions/current/has-pension");
             } else {

@@ -74,6 +74,18 @@ public class PensionsServiceTest {
     }
 
     @Test
+    public void givenUserInOnPenultimatePension_isPenultimatePension_shouldReturnTrue() {
+        boolean actual = sut.isPenultimatePension(MAX_PENSIONS_ALLOWED-1);
+        assertTrue(actual);
+    }
+
+    @Test
+    public void givenUserIsNotOnPenultimatePension_isPenultimatePension_shouldReturnFalse() {
+        boolean actual = sut.isPenultimatePension(MAX_PENSIONS_ALLOWED);
+        assertFalse(actual);
+    }
+
+    @Test
     public void whenCanAddPensionIsCalled_shouldCallClaimCountForAllIdentifiers() {
         boolean actual = sut.canAddPension(mockClaim);
 

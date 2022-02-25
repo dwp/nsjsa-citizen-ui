@@ -1,5 +1,7 @@
 package uk.gov.dwp.jsa.citizen_ui.controller.pensions.current;
 
+import org.hamcrest.CoreMatchers;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -34,6 +36,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static uk.gov.dwp.jsa.citizen_ui.Constants.MAX_PENSIONS_ALLOWED;
 import static uk.gov.dwp.jsa.citizen_ui.model.form.common.BooleanForm.BOOLEAN_VIEW_NAME;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -75,6 +78,14 @@ public class HasCurrentPensionControllerTest {
     private StepInstance stepInstance;
     @Mock
     private CookieLocaleResolver mockCookieLocaleResolver;
+    @Mock
+    private PensionsService mockPensionsService;
+    @Mock
+    private StepInstance mockStepInstance;
+
+    private GuardForm form = new GuardForm();
+    private BooleanQuestion booleanQuestion = new BooleanQuestion();
+
 
     private String anonymousClaimId = "123e4567-e89b-12d3-a456-426655440000";
 
@@ -86,6 +97,16 @@ public class HasCurrentPensionControllerTest {
         when(step.getIdentifier()).thenReturn("TEST_IDENTIFIER");
         sut = new HasCurrentPensionController(mockClaimRepository, mockRoutingService, pensionsService);
         ReflectionTestUtils.setField(sut, "cookieLocaleResolver", mockCookieLocaleResolver);
+    }
+
+    @Test
+    public void givenCounterIs1AndCannotAddPension_getNextPathReturnsCorrectPath() {
+        booleanQuestion = new BooleanQuestion();
+        form.setQuestion(booleanQuestion);
+        booleanQuestion.setChoice(true);
+        form.setCount(null);
+        String nextPath = sut.getNextPath(mockClaim, form, mockStepInstance);
+        Assert.assertThat(nextPath, CoreMatchers.is("redirect:/form/pensions/current/details/1/provider-name"));
     }
 
     @Test

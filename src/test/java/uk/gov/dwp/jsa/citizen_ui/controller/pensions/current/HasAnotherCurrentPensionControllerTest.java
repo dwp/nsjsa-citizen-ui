@@ -36,6 +36,7 @@ import static org.mockito.Mockito.anyString;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static uk.gov.dwp.jsa.citizen_ui.Constants.MAX_PENSIONS_ALLOWED;
 import static uk.gov.dwp.jsa.citizen_ui.controller.personaldetails.EditMode.SINGLE;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -101,6 +102,29 @@ public class HasAnotherCurrentPensionControllerTest {
 
         assertThat(form.getBackRef(), is("BACK_URL"));
     }
+
+    @Test
+    public void givenCounterIs1AndCannotAddPension_getNextPathReturnsCorrectPath() {
+        form.setCount(1);
+        booleanQuestion.setChoice(true);
+        when(mockPensionsService.canAddPension(mockClaim)).thenReturn(true);
+
+        String nextPath = sut.getNextPath(mockClaim, form, mockStepInstance);
+
+        assertThat(nextPath, is("redirect:/form/pensions/current/details/2/provider-name"));
+    }
+
+    @Test
+    public void givenCounterIs8AndCannotAddPension_getNextPathReturnsCorrectPath() {
+        form.setCount(MAX_PENSIONS_ALLOWED-1);
+        booleanQuestion.setChoice(true);
+        when(mockPensionsService.canAddPension(mockClaim)).thenReturn(true);
+
+        String nextPath = sut.getNextPath(mockClaim, form, mockStepInstance);
+
+        assertThat(nextPath, is("redirect:/form/pensions/current/details/9/provider-name"));
+    }
+
 
     @Test
     public void givenCounterIsLessThan9_getNextPathReturnsCorrectPath() {

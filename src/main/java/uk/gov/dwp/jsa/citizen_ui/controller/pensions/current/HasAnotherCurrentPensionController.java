@@ -134,6 +134,10 @@ public class HasAnotherCurrentPensionController extends CounterFormController<Gu
     public String getNextPath(final Claim claim, final GuardForm form, final StepInstance stepInstance) {
         if (form.isGuardedCondition()) {
             if (!pensionsService.canAddPension(claim)) {
+                if (form.getCount() != MAX_PENSIONS_ALLOWED) {
+                    //added to allow user to navigate through pensions when going back
+                    return format("redirect:/form/pensions/current/details/%s/provider-name", (form.getCount() + 1));
+                }
                 String editParam = getEditParam(form);
                 String nextUrl = "redirect:/form/pensions/max-current-pensions";
                 if (StringUtils.isEmpty(editParam)) {

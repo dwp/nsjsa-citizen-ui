@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>uk.gov.dwp.jsa</groupId>
     <artifactId>citizen-ui</artifactId>
-    <version>1.28.0</version>
+    <version>1.29.0</version>
     <packaging>jar</packaging>
     <name>citizen-ui</name>
     <url>http://maven.apache.org</url>
 
     <properties>
-        <nsjsa-commons.version>1.15.0-101634f9</nsjsa-commons.version>
+        <nsjsa-commons.version>1.16.0-df633087</nsjsa-commons.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>

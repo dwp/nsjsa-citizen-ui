@@ -45,6 +45,17 @@ public class PensionsService {
         }
     }
 
+
+    /**
+     * Verify if the user is on the penultimate max pensions allowed.
+     * @param count form count the user is currently on
+     * @return boolean
+     */
+
+    public boolean isPenultimatePension(final Integer count) {
+        return count == (MAX_PENSIONS_ALLOWED - 1);
+    }
+
     public boolean canAddPension(final Claim claim) {
         return countAnswers(claim) < MAX_PENSIONS_ALLOWED;
     }
